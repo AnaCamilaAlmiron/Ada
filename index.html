@@ -12,7 +12,13 @@
       href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
       rel="stylesheet"
     />
-    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <nav class="navbar">
@@ -23,10 +29,31 @@
         <button id="btn-hombres">Hombres</button>
       </div>
     </nav>
+    <h2 class="total" id="total">Total de personajes: 0</h2>
     <div class="container" id="lista"></div>
-    <div>
-      <button id="btn-primero"><i class="ph-rewind icon"></i></button>
+    <h2 class="pagina-actual" id="pagina-actual">Página actual:</h2>
+    <div class="botones-paginacion">
+      <button id="btn-primero" class="boton-paginacion">
+        <i class="fa-solid fa-backward-fast"></i>
+      </button>
+      <button id="btn-anterior" class="boton-paginacion">
+        <i class="fa-solid fa-backward-step"></i>
+      </button>
+      <button id="btn-siguiente" class="boton-paginacion">
+        <i class="fa-solid fa-forward-step"></i>
+      </button>
+      <button id="btn-ultimo" class="boton-paginacion">
+        <i class="fa-solid fa-forward-fast"></i>
+      </button>
     </div>
+    <footer class="footer">
+      <p>
+        Hecho con ❤️ por
+        <a href="https://www.linkedin.com/in/anaalmiron" target="_blank"
+          >Ana Almiron
+        </a>
+      </p>
+    </footer>
   </body>
   <script src="main.js" defer></script>
 </html>

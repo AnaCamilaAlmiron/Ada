@@ -18,6 +18,7 @@
   background-color: #000;
   border: #000;
   margin: 0 10px;
+  font-size: 1.1rem;
 }
 .card {
   box-shadow: 10px 12px rgb(219, 211, 211);
@@ -48,7 +49,37 @@
   height: 30px;
   display: block;
 }
+.total {
+  margin-bottom: 10px;
+}
+.botones-paginacion {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.boton-paginacion {
+  background-color: #ffffff;
+  border: #fff;
+  color: rgb(12, 118, 159);
+  margin: 10px 10px;
+  font-size: 1.9rem;
+}
+.pagina-actual {
+  text-align: center;
+  margin-top: 50px;
+}
 
+.boton-paginacion:disabled {
+  color: rgb(185, 181, 181);
+}
+
+.footer {
+  background-color: #121212;
+  color: #666;
+  padding: 48px 0;
+  text-align: center;
+  font-size: 1.3rem;
+}
 @media screen and (min-width: 768px) {
   .container {
     grid-template-columns: repeat(2, 1fr);
