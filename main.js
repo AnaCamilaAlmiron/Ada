@@ -39,6 +39,10 @@ document.getElementById("btn-mujeres").addEventListener("click", function () {
   });
 
   cargarPersonajes(personajesMujeres);
+  document.getElementById("btn-anterior").disabled = true;
+  document.getElementById("btn-primero").disabled = true;
+  document.getElementById("btn-siguiente").disabled = true;
+  document.getElementById("btn-ultimo").disabled = true;
 });
 
 document.getElementById("btn-hombres").addEventListener("click", function () {
@@ -47,10 +51,18 @@ document.getElementById("btn-hombres").addEventListener("click", function () {
   });
 
   cargarPersonajes(personajesHombres);
+  document.getElementById("btn-anterior").disabled = true;
+  document.getElementById("btn-primero").disabled = true;
+  document.getElementById("btn-siguiente").disabled = true;
+  document.getElementById("btn-ultimo").disabled = true;
 });
 
 document.getElementById("btn-todos").addEventListener("click", function () {
   cargarPersonajes(personajes);
+  document.getElementById("btn-anterior").disabled = false;
+  document.getElementById("btn-primero").disabled = false;
+  document.getElementById("btn-siguiente").disabled = false;
+  document.getElementById("btn-ultimo").disabled = false;
 });
 document.getElementById("btn-siguiente").addEventListener("click", function () {
   numeroPagina = numeroPagina + 1;
